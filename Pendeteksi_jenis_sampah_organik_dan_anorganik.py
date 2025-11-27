@@ -134,7 +134,7 @@ def manual_input(detector):
         
         if submitted:
             # Mapping fitur tambahan ke nilai numerik
-            warna_map = {"Hijau": 1, "Coklat": 2, "Putim": 3, "Transparan": 4, "Warna-warni": 5}
+            warna_map = {"Hijau": 1, "Coklat": 2, "Putih": 3, "Transparan": 4, "Warna-warni": 5}
             tekstur_map = {"Lunak": 1, "Keras": 2, "Elastis": 3, "Rapuh": 4}
             
             features = [berat, volume, kadar_air, suhu, warna_map[warna], tekstur_map[tekstur]]
@@ -305,4 +305,5 @@ def display_recommendation(waste_type):
             st.write("Titik pengumpulan sampah")
 
 if __name__ == "__main__":
+
     main()
